@@ -16,13 +16,15 @@
         color: darken($color: white, $amount: 10);
     }
 }
-
+button[type="submit"]:disabled {
+    cursor: not-allowed;
+}
 .btn-primary {
     background-color: $primary;
     border-radius: 2px;
 
     &:disabled {
-        background-color: lighten($color: $primary, $amount: 15);
+        background-color: lighten($color: $primary, $amount: 20);
     }
 
     &:hover {
